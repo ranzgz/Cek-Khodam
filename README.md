@@ -30,3 +30,20 @@ A fun and interactive web application that reveals your spiritual companion (kho
 6. Click "CEK LAGI" to try with a different name
 
 ## Project Structure 📂
+
+khodam-checker/
+├── index.html          # Main HTML file
+├── styles.css          # Custom CSS styles
+├── script.js           # JavaScript functionality
+└── README.md           # This file
+
+This README provides:
+- Project description
+- Features list
+- Technology stack
+- Usage instructions
+- Project structure
+- Customization options
+- Contribution guidelines
+
+You can further customize it to better match your project's specifics!
