@@ -1,0 +1,53 @@
+@keyframes slotSpin {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(calc(-100% + 100px)); }
+}
+
+.slot-machine {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slot-items {
+    position: absolute;
+    width: 100%;
+    animation: slotSpin 3s cubic-bezier(0.1, 0.7, 0.1, 1) forwards;
+}
+
+.firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px;
+    animation: firework 1s ease-out;
+    opacity: 0;
+}
+
+@keyframes firework {
+    0% { 
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% { 
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+        width: 2px;
+        height: 2px;
+    }
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.8);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
